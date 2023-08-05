@@ -1,0 +1,19 @@
+.label {
+  font-size: 30px;
+}
+.slider {
+  height: 40px;
+  border: 2px solid rgb(101, 109, 148);
+  border-radius: 20px;
+
+  margin-top: 20px;
+  min-width: 300px;
+  min-height: 40px;
+}
+.thumb {
+  background-color: rgb(192, 199, 255);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}

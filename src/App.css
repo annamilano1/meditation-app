@@ -1,0 +1,7 @@
+/*https://cssgradient.io/*/
+body{
+    background: rgb(250,116,179);
+background: radial-gradient(circle, rgb(155, 126, 241) 0%, rgb(247, 185, 238) 88%);
+    color: rgb(45, 36, 26);
+}
+

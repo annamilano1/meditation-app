@@ -1,0 +1,47 @@
+.box {
+  padding: 50px;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 20px;
+}
+
+.select {
+  background: rgba(255, 255, 255, 0.44);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(19.7px);
+  -webkit-backdrop-filter: blur(19.7px);
+  padding: 20px;
+  border: 2px dashed white;
+}
+img {
+  width: 90px;
+}
+button {
+  margin: 10px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(86, 127, 182, 0.51);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.8px);
+  -webkit-backdrop-filter: blur(7.8px);
+}
