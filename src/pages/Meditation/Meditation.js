@@ -32,7 +32,7 @@ function Meditation() {
 
   useEffect(() => {
     if (!isPaused) {
-      if (secondsLeft == 0) {
+      if (secondsLeft === 0) {
         setIsPaused(true);
         setSecondsleft(totalSeconds);
         audioRef.current?.pause();
@@ -98,11 +98,11 @@ function Meditation() {
 
         <audio
           src={
-            scenography == "sea"
+            scenography === "sea"
               ? SeaAudio
-              : scenography == "zen"
+              : scenography === "zen"
               ? ZenAudio
-              : scenography == "jungle"
+              : scenography === "jungle"
               ? JungleAudio
               : OptionalAudio
           }
