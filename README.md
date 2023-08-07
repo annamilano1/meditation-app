@@ -1,6 +1,6 @@
 # MEDITATION APP
 
-create your meditation space with different ambient sounds!
+create your meditation space with your favourite ambient sounds!
 ![Logo](src/images/screen-meditation.png)
 
 ## Link :
