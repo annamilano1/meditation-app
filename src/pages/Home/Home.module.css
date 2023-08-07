@@ -24,14 +24,16 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(19.7px);
   -webkit-backdrop-filter: blur(19.7px);
-  padding: 20px;
+  padding: 12px;
+  margin: auto;
   border: 2px dashed white;
 }
-img {
-  width: 90px;
-}
+
 button {
   margin: 10px;
+}
+.select img {
+  width: 90px;
 }
 .link {
   text-decoration: none;
@@ -39,9 +41,23 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(86, 127, 182, 0.51);
+  background: rgba(155, 126, 241, 0.558);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.8px);
   -webkit-backdrop-filter: blur(7.8px);
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    width: 40px;
+  }
+  .box {
+    border: 0px;
+    font-size: 15px;
+    padding: 0px;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
 }

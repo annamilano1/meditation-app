@@ -6,7 +6,7 @@ import shells from "../../images/shells.png";
 import tree from "../../images/tree.png";
 import bamboo from "../../images/bamboo.png";
 import SessionContext from "../../context/SessionContext";
-import { useContext} from "react";
+import { useContext } from "react";
 import styles from "./Home.module.css";
 
 function Home() {
@@ -16,36 +16,38 @@ function Home() {
 
   return (
     <>
-   
-        <div className={styles.box}>
-          <h1>Let's start a new session!</h1>
-          <p>select your options before starting a new session:</p>
-          <Slider></Slider>
+      <div className={styles.box}>
+        <h1>Let's start a new session!</h1>
+        <p>Select your options before starting a new session:</p>
+        <Slider></Slider>
 
-          <div>
-            <Button
-              img={shells}
-              handleClick={() => setScenography("sea")}
-              selected={scenography === "sea" ? styles.select : styles.button}
-            ></Button>
-            <Button
-              img={bamboo}
-              handleClick={() => setScenography("zen")}
-              selected={scenography=== "zen" ? styles.select : styles.button}
-            ></Button>
-            <Button
-              img={tree}
-              handleClick={() => setScenography("jungle")}
-              selected={scenography === "jungle" ? styles.select : styles.button}
-            ></Button>
-          </div>
-         {scenography && (<Link to="/Meditation" className={styles.link}>
-            <Button img={Med} ></Button>
-            <p>GO</p>
-          </Link>)}
-          
+        <div className={styles.displayButtons}>
+          <Button
+            img={shells}
+            handleClick={() => setScenography("sea")}
+            selected={scenography === "sea" ? styles.select : styles.button}
+            description={"sea"}
+          ></Button>
+          <Button
+            img={bamboo}
+            handleClick={() => setScenography("zen")}
+            selected={scenography === "zen" ? styles.select : styles.button}
+            description={"bamboo"}
+          ></Button>
+          <Button
+            img={tree}
+            handleClick={() => setScenography("jungle")}
+            selected={scenography === "jungle" ? styles.select : styles.button}
+            description={"jungle"}
+          ></Button>
         </div>
-     
+        {scenography && (
+          <Link to="/Meditation" className={styles.link}>
+            <Button img={Med} description={"start"}></Button>
+            <p>GO</p>
+          </Link>
+        )}
+      </div>
     </>
   );
 }

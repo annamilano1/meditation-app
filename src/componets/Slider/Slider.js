@@ -3,7 +3,7 @@ import style from "../Slider/Slider.module.css";
 import SessionContext from "../../context/SessionContext";
 import { useContext } from "react";
 function Slider() {
-  const settings= useContext(SessionContext);
+  const settings = useContext(SessionContext);
   return (
     <>
       <label className={style.label}>{settings.meditationMinutes}:00</label>

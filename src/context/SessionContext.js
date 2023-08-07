@@ -1,3 +1,3 @@
 import react from "react";
-const SessionContext= react.createContext({});
+const SessionContext = react.createContext({});
 export default SessionContext;
