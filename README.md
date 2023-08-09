@@ -5,7 +5,7 @@ create your meditation space with your favourite ambient sounds!
 
 ## Link :
 
-[meditate](https://64ce9718203934649aa4a5b3--strong-babka-76c68a.netlify.app/)
+[click me!](https://strong-babka-76c68a.netlify.app/)
 
 
 ## How to use:
